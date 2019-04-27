@@ -4,5 +4,5 @@ import 'package:angular/angular.dart';
   selector: 'lazy-component',
   templateUrl: 'lazy_component.html',
 )
-class BarComponent {
+class LazyComponent {
 }

@@ -1,3 +1,10 @@
-<h1>My First AngularDart App</h1>
+<h1>Loading imperativilly components with Angular Dart</h1>
+<div>
+	<button (click)="loadImperativillyComponent('foo')">Load Foo component</button>
+	<button (click)="loadImperativillyComponent('bar')">Load Bar component</button>
+	<button (click)="loadLazyComponent()">Lazy component</button>
+</div>
+<template #currentComponent></template>
 
-<todo-list></todo-list>
+
+
