@@ -27,7 +27,7 @@ class AppComponent {
 
   AppComponent(this._loader, this._router);
 
-  void loadImperativillyComponent() {
+  void loadImperativelyComponent() {
     targetComponent.clear();
     _loader.loadNextToLocation(foo.FooComponentNgFactory, targetComponent); 
   }
