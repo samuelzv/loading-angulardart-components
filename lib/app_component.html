@@ -1,12 +1,35 @@
-<h1>Loading imperativilly components with Angular Dart</h1>
-<div>
-	<button (click)="loadImperativillyComponent('foo')">Load Foo component</button>
+<h1>Loading components with Angular Dart</h1>
+
+<div class="loader">
+	<material-button 
+		raised
+		(trigger)="loadImperativillyComponent()">
+		Load imperativilly 
+	</material-button>
+	<template #targetComponent></template>
 </div>
-<template #currentComponent></template>
+
+<div class="loader">
+	<material-button 
+		raised
+		(trigger)="loadDeferredComponent()">
+		Deferred lazy loading
+	</material-button>
+	<div *ngIf="isVisibleDeferred">
+		<bar @deferred></bar>
+	</div>
+</div>
+
+<div class="loader">
+	<material-button 
+		raised
+		(trigger)="loadLazyComponent()">
+		Manual lazy loading
+	</material-button>
+	<router-outlet [routes]="Routes.all"></router-outlet>
+</div>
 
 
-<button (click)="loadLazyComponent()">Lazy loading</button>
-<router-outlet [routes]="Routes.all"></router-outlet>
 
 
 

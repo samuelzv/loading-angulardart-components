@@ -1,7 +1,7 @@
 import 'package:angular/angular.dart';
 
 @Component(
-  selector: 'foo-component',
+  selector: 'foo',
   templateUrl: 'foo_component.html',
 )
 class FooComponent {
